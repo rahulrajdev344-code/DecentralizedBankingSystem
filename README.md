@@ -59,14 +59,6 @@ This Project has been developed under the event Hack36 -v4 (2021) of college Mot
 4. Are able to recruit employee
 5. Can enter details about their own products and get them added to the Mart
 
-## Contributors:
-
-Team Name: BINARY BOSSES
-
-- [Deepesh Manoj Rathi](https://github.com/mrpirated)
-- [Aditya Raju Darji](https://github.com/aditya-darji)
-- [Ankit Pathak](https://github.com/ankitpathak6199)
-- [Kartikey Gautam](https://github.com/kartikey-gautam14)
 
 ### Made at:
 
