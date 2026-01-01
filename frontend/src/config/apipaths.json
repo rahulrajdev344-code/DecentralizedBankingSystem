@@ -1,0 +1,20 @@
+{
+	"newId": "http://localhost:4141/api/newId",
+	"createVacancy": "http://localhost:4141/api/createVacancy",
+	"createProduct": "http://localhost:4141/api/createProduct",
+	"getUserTransactions": "http://localhost:4141/api/getUserTransactions",
+	"becomeLender": "http://localhost:4141/api/becomeLender",
+	"getAllCompanies": "http://localhost:4141/api/getAllCompanies",
+	"getAllUsers": "http://localhost:4141/api/getAllUsers",
+	"userToUserTransaction": "http://localhost:4141/api/userToUserTransaction",
+	"getProducts": "http://localhost:4141/api/getProducts",
+	"productPurchase": "http://localhost:4141/api/productPurchase",
+	"getLenders": "http://localhost:4141/api/getLenders",
+	"getGovtInfo": "http://localhost:4141/api/getGovtInfo",
+	"takeloan": "http://localhost:4141/api/takeloan",
+	"getCompanyTransactions": "http://localhost:4141/api/getCompanyTransactions",
+	"recruitEmployee": "http://localhost:4141/api/recruitEmployee",
+	"getUserInfo": "http://localhost:4141/api/getUserInfo",
+	"getProductsbyCompany": "http://localhost:4141/api/getProductsbyCompany",
+	"changeProductDetails": "http://localhost:4141/api/changeProductDetails"
+}
