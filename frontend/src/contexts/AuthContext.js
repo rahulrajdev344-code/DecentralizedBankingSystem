@@ -28,7 +28,10 @@ export function AuthProvider({ children }) {
 			displayName: UserId,
 		});
 
-		db.collection(coll).doc(currentUser.uid).set(data);
+		// Use auth.currentUser directly to avoid race condition with state update
+		if (auth.currentUser) {
+			await db.collection(coll).doc(auth.currentUser.uid).set(data);
+		}
 	};
 
 	const login = async (email, password) => {
