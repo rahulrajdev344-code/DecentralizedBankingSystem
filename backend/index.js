@@ -17,8 +17,9 @@ app.use(cors({
 	allowedHeaders: ['Content-Type', 'Authorization']
 }));
 app.use(bodyParser.json());
-setInterval(yearly, 120000);
-setInterval(monthly, 10000);
+// Disabled for demo deployment - these require local Ganache
+// setInterval(yearly, 120000);
+// setInterval(monthly, 10000);
 //updatedb();
 app.use("/api", auth);
 app.use("/api", companyRoutes);
