@@ -25,6 +25,11 @@ app.use("/api", auth);
 app.use("/api", companyRoutes);
 app.use("/api", userRoutes);
 
+// Root Health Check
+app.get("/", (req, res) => {
+	res.send("Backend is Online!");
+});
+
 app.listen(config.PORT, () =>
 	console.log("Server running at port " + config.PORT)
 );
