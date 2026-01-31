@@ -2,15 +2,15 @@ FROM node:18-alpine
 
 WORKDIR /app
 
-# Copy package files
-COPY package.json ./
-COPY package-lock.json ./
+# Copy package files from backend
+COPY backend/package.json ./
+COPY backend/package-lock.json ./
 
 # Install dependencies
 RUN npm install --legacy-peer-deps
 
-# Copy source code
-COPY . .
+# Copy source code from backend
+COPY backend/ .
 
 EXPOSE 4141
 
