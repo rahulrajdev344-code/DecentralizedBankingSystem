@@ -2,10 +2,14 @@ FROM node:18-alpine
 
 WORKDIR /app
 
-COPY package*.json ./
+# Copy package files
+COPY package.json ./
+COPY package-lock.json ./
 
-RUN npm install
+# Install dependencies
+RUN npm install --legacy-peer-deps
 
+# Copy source code
 COPY . .
 
 EXPOSE 4141
