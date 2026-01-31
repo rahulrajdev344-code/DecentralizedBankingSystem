@@ -53,8 +53,9 @@ export default function Register() {
 			setUserId(userId);
 
 			history.push("/");
-		} catch {
-			setError("Failed to create an account");
+		} catch (error) {
+			console.error(error);
+			setError("Failed to create an account: " + (error.message || error));
 		}
 
 		setLoading(false);
