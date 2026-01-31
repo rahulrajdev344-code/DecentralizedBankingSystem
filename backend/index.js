@@ -11,7 +11,11 @@ const { yearly, monthly } = require("./initializeblockchain");
 const app = express();
 
 app.use(express.json());
-app.use(cors());
+app.use(cors({
+	origin: '*',
+	methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+	allowedHeaders: ['Content-Type', 'Authorization']
+}));
 app.use(bodyParser.json());
 setInterval(yearly, 120000);
 setInterval(monthly, 10000);
