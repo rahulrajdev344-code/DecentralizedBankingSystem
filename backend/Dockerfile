@@ -1,5 +1,8 @@
 FROM node:18-alpine
 
+# Install git and build tools needed by some npm packages
+RUN apk add --no-cache git python3 make g++
+
 WORKDIR /app
 
 # Copy package files from backend
