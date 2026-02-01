@@ -28,9 +28,13 @@ export function AuthProvider({ children }) {
 			displayName: UserId,
 		});
 
-		// Use auth.currentUser directly to avoid race condition with state update
-		if (auth.currentUser) {
-			await db.collection(coll).doc(auth.currentUser.uid).set(data);
+		// Try to save to Firestore, but don't fail signup if it errors
+		try {
+			if (auth.currentUser) {
+				await db.collection(coll).doc(auth.currentUser.uid).set(data);
+			}
+		} catch (err) {
+			console.error("Firestore write failed (non-critical):", err);
 		}
 	};
 
