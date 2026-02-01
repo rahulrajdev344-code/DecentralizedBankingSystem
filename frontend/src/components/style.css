@@ -1,6 +1,8 @@
 #nav li {
-  float: inline-start;
+  display: block;
+  width: 100%;
 }
+
 #nav {
   width: fit-content;
   height: 100vh;
